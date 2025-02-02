@@ -1,0 +1,157 @@
+body {
+      font-family: Arial, sans-serif;
+      background-color: #0a192f; /* Dark blue background */
+      color: #e6f1ff; /* Light text */
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      width: 100vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+    
+    .scoreboard-container {
+      display: flex;
+      gap: 1vw;
+      max-width: 98vw;
+      width: 98vw;
+      margin: 0 auto;
+      height: 98vh;
+    }
+    
+    .scoreboard {
+      flex: 3;
+      background-color: #172a4a; /* Darker blue card background */
+      padding: 1vw;
+      border-radius: 0.5vw;
+      box-shadow: 0 0.1vw 0.2vw rgba(0,0,0,0.3);
+      overflow-x: auto;
+      height: 100%;
+      transition: all 0.3s ease;
+    }
+    
+    .rankings {
+      flex: 1;
+      background-color: #172a4a; /* Darker blue card background */
+      padding: 1vw;
+      border-radius: 0.5vw;
+      height: fit-content;
+      max-height: 98vh;
+      overflow-y: auto;
+      box-shadow: 0 0.1vw 0.2vw rgba(0,0,0,0.3);
+      transition: all 0.3s ease;
+    }
+    
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1vw;
+    }
+    
+    th, td {
+      padding: 0.8vw;
+      text-align: center;
+      border: 0.05vw solid #4a5568;
+      font-size: 1.1vw;
+      transition: all 0.2s ease;
+    }
+    
+    th {
+      background-color: #2d3748; /* Darker blue header background */
+      font-weight: bold;
+    }
+    
+    .player-header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.2vw;
+    }
+    
+    select {
+      padding: 0.2vw;
+      font-size: 1vw;
+      border-radius: 0.2vw;
+      border: 0.05vw solid #4a5568;
+      background-color: #2d3748; /* Darker blue select background */
+      color: #e6f1ff; /* Light text */
+      transition: all 0.2s ease;
+    }
+    
+    input {
+      width: 5vw;
+      padding: 0.2vw;
+      text-align: center;
+      border: 0.05vw solid #4a5568;
+      border-radius: 0.2vw;
+      background-color: #2d3748; /* Darker blue input background */
+      color: #e6f1ff; /* Light text */
+      font-size: 1vw;
+      transition: all 0.2s ease;
+    }
+    
+    .total-row {
+      background-color: #2d3748; /* Darker blue total row background */
+      font-weight: bold;
+      font-size: 1.2vw;
+    }
+    
+    .modal {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.7);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: all 0.3s ease;
+    }
+    
+    .modal-content {
+      background: #172a4a; /* Darker blue modal content background */
+      padding: 1vw;
+      border-radius: 0.5vw;
+      box-shadow: 0 0.1vw 0.2vw rgba(0,0,0,0.3);
+      transition: all 0.3s ease;
+    }
+    
+    .modal-buttons {
+      margin-top: 1vw;
+      display: flex;
+      justify-content: flex-end;
+      gap: 0.5vw;
+    }
+    
+    button {
+      padding: 0.6vw 1.2vw;
+      border-radius: 0.2vw;
+      border: 0.05vw solid #4a5568;
+      background-color: #4a5568;
+      color: #e2e8f0;
+      cursor: pointer;
+      font-size: 1vw;
+      transition: all 0.2s ease;
+    }
+    
+    button:hover {
+      background-color: #6b7280;
+    }
+    
+    .rankings h2 {
+      margin-top: 0;
+      font-size: 1.5vw;
+    }
+    
+    .rankings ol {
+      padding-left: 1.5vw;
+      margin: 0;
+    }
+    
+    .rankings li {
+      padding: 0.6vw 0;
+      font-size: 1.2vw;
+    }
